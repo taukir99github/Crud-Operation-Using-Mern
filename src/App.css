@@ -1,38 +1,105 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container{
+  max-width: 700px;
+  /* background-color: aquamarine; */
+  margin: 20px auto;
+  padding: 10px;
 }
+.btn{
+  padding: 10px 25px;
+  border: none;
+  cursor: pointer;
+  background-color:blueviolet;
+  color: white;
+  border-radius: 6px;
+  font-size: 17px;
+  
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Add-container{
+  position: absolute;
+  background-color: rgba(0,0,0,0.1);
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Add-container form{
+  width: 420px;
+  display: flex;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: white;
+  padding: 60px 50px;
+   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+   border-radius: 9px;
+
+}
+.Add-container form label{
+  margin: 14px;
+  font-size: 22px;
+}
+.Add-container form input{
+  font-size: 16px;
+  padding: 9px 5px;
+  outline: none;
+  border: none;
+  background: beige;
+  border-radius: 7px;
+}
+.Add-container form button{
+  padding: 10px 25px;
+  border: none;
+  cursor: pointer;
+  background-color:blueviolet;
   color: white;
+  border-radius: 6px;
+  font-size: 17px;
+  margin-top: 2rem;
+}
+.Add-container form .icons{
+  margin-left: auto;
+  font-size: 25px;
+  cursor: pointers;
 }
 
-.App-link {
-  color: #61dafb;
+.tableContainer{
+  margin-top: 3rem;
+}
+.tableContainer table{
+  border: 1px solid #c9c5c2;
+}
+.tableContainer table thead tr{
+  background-color: antiquewhite;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.tableContainer table thead tr th,
+.tableContainer table tbody tr td
+{
+  min-width: 200px;
+  padding: 8px;
+  text-align: center;
+}
+.tableContainer table tbody tr td{
+  border-bottom: 1px solid rgb(98, 87, 87);
+}
+.btn-edit,
+.btn-del{
+  margin: 0px 11px;
+  padding: 7px 10px;
+  border: none;
+  outline: none;
+  background-color: blue;
+  color: white;
+  border-radius: 7px;
+  cursor: pointer;
+
 }
